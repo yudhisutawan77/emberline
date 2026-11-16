@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emberline — defend the Ember Line</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<main class="stage">
+  <canvas id="game" width="960" height="640" aria-label="Emberline game field"></canvas>
+  <p id="status" class="status" role="status" aria-live="polite">Emberline. Press Enter or click to play.</p>
+  <section class="howto" aria-label="How to play">
+    <h2>How to play</h2>
+    <p>You are the keeper of the Ember Line. Void shards fall from the dark —
+       shoot them down, catch the pickups they drop, and survive all ten waves.
+       On wave 10 the Hollow Maw rises: break it, and the line burns bright.</p>
+    <ul>
+      <li><strong>Move</strong> — Arrow keys, WASD, or mouse</li>
+      <li><strong>Shoot</strong> — hold Space, Z, or the mouse button</li>
+      <li><strong>Bomb</strong> — B (clears the sky, hurts everything)</li>
+      <li><strong>Pause</strong> — P &nbsp;·&nbsp; <strong>Mute</strong> — M &nbsp;·&nbsp; <strong>Restart</strong> — R</li>
+    </ul>
+    <p class="tips">Kills in a row raise your combo multiplier, up to ×5 — but one hit
+       resets it. Spread shot, shield, extra life and bombs drop from shards.</p>
+  </section>
+</main>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
