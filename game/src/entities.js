@@ -1,6 +1,9 @@
 // The things that move: the player skiff, the five enemy kinds plus the
 // boss, bullets, pickups and particles. Each one is a plain object; the
-// world advances them and the renderer draws them.
+// world advances them and the renderer draws them. Enemies: drifters fall
+// straight, weavers sine across the sky, splitters break into two
+// shardlings, stingers shoot back, the boss fires radial bullet rings.
+// Pickups: spread shot, shield, +1 life, bomb — each with its own mark.
 import { ENEMY, FIELD, PICKUP, PLAYER } from './config.js';
 
 export function createPlayer() {

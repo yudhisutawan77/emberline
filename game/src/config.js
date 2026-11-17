@@ -1,5 +1,8 @@
 // Emberline tuning: every number the game plays by lives here, so a balance
-// change is one edit, not a hunt through the code.
+// change is one edit, not a hunt through the code. The field is 960x640;
+// the player fires every 0.16 s; the five enemy kinds and the boss each
+// have their own speed, HP, score and colour; wave plans grow the counts
+// and shrink the spawn gap as the waves climb to 10.
 export const FIELD = { width: 960, height: 640 };
 export const STEP = 1 / 60;
 export const BEST_KEY = 'emberline-best';
