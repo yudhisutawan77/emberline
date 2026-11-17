@@ -6,7 +6,16 @@
 
 # Emberline
 
-A neon vertical arcade defender for make.fun's **best-game-01** ("Make the best game").
+**Emberline** is a neon vertical arcade defender: pilot the ember-skiff
+*Kestrel* down the last glowing horizon and hold the Ember Line through
+**10 escalating waves** against **5 enemy kinds** — drifters, weavers,
+splitters that break in two, stingers that shoot back — and the wave-10
+boss, the **Hollow Maw** (220 HP, radial bullet rings, spawns shardlings).
+Kills in a row build a **combo multiplier up to ×5**; one hit resets it.
+Falling shards drop **4 pickups** (spread shot, shield, +1 life, bomb),
+with 3 lives, a screen-clearing bomb, synthesised WebAudio sound and music,
+and a best score kept between runs. Built for make.fun's **best-game-01**
+("Make the best game").
 
 You are the keeper of the **Ember Line**, the last glowing horizon. Void shards
 fall from the dark — shoot them down, catch what they drop, and survive all ten

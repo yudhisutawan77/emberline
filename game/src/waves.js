@@ -1,6 +1,8 @@
 // The wave director: turns a wave number into a queue of enemies, releases
 // them on a timer, brings the boss in on the final wave, and says when the
 // wave is clear. The world asks it every step; it owns no drawing.
+// Ten waves, escalating: more of every kind and faster spawns each wave,
+// splitters from wave 3, stingers from wave 4, the Hollow Maw on wave 10.
 import { FIELD, wavePlan } from './config.js';
 import { createBoss, createEnemy } from './entities.js';
 

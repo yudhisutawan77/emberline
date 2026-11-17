@@ -1,6 +1,9 @@
 // Every pixel the player sees. The renderer draws the world state plus one
 // screen overlay (title, play, paused, game over, victory). It never changes
-// the world; the game loop owns that.
+// the world; the game loop owns that. What it paints: the score/wave/lives/
+// combo HUD, the neon field with its parallax starfield and slow aurora
+// ribbons, particle bursts, floating score text and screen shake on hits,
+// and the boss's health bar over the fight.
 import { FIELD, FINAL_WAVE, PALETTE } from './config.js';
 
 export const SCREEN_TITLE = 'title';

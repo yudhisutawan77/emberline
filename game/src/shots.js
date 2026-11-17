@@ -94,7 +94,10 @@ export function stageShot(name, world) {
     return { screen: SCREEN_OVER, best: world.state.score };
   }
   if (name === 'play') {
-    world.beginWave(4);
+    // Wave 6, 14 s in: the densest mid-fight frame the probe found
+    // (6 live enemies, combo x3, ~78 particles, 4 pickups on screen,
+    // score 1600) — wave 4 at 14 s is already mostly cleared out.
+    world.beginWave(6);
     runSteps(world, 14, 0.7, false);
     return { screen: SCREEN_PLAY, best: world.state.score };
   }
@@ -116,9 +119,10 @@ export function stageShot(name, world) {
     guard += 1;
   }
   if (name === 'boss') {
-    // A few more seconds of the fight, so the frame shows the boss
-    // mid-battle with its bullet ring out, not just arriving.
-    runSteps(world, 3, 0.7, true);
+    // Five more seconds of the fight, so the frame shows the boss
+    // mid-battle with a dense bullet ring out (29 live enemy bullets at
+    // 5 s, vs 16 at 3 s), not just arriving.
+    runSteps(world, 5, 0.7, true);
     return { screen: SCREEN_PLAY, best: world.state.score };
   }
   // Victory: keep fighting the boss until it falls.

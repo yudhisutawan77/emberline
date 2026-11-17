@@ -1,6 +1,10 @@
 // The world: everything the game is. It owns the state, advances it in fixed
 // steps, and reports what happened as event flags. It draws nothing and
-// knows nothing about the DOM.
+// knows nothing about the DOM. The rules it runs: 10 escalating waves of
+// five enemy kinds (drifters, weavers, splitters, stingers, and the wave-10
+// boss the Hollow Maw, 220 HP, radial bullet rings); a combo multiplier up
+// to x5 that one hit resets; four pickups (spread shot, shield, +1 life,
+// bomb); 3 lives, and win only when the boss falls.
 import { ENEMY, FIELD, FINAL_WAVE, PICKUP, PLAYER, STEP, wavePlan } from './config.js';
 import { burst, createBoss, createPickup, createPlayer, createStarfield, driftStars } from './entities.js';
 import { createDirector } from './waves.js';
